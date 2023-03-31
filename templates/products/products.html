@@ -3,4 +3,23 @@
 
 {% block content %}
 <h1>products</h1>
+<tabel>
+    <thead>
+        <tr>
+        <th>name</th>
+        <th>price</th>
+        <th>discription</th>
+        <th>image</th>
+        <th>active</th>
+    </tr>
+    </thead>
+    {% for pro in productsDB %}
+    <tbody>
+        <tr>
+<td>{{pro.name}}</td>
+<td>{{pro.price}}</td>
+</tr>
+</tbody>
+{% endfor %}
+</table>
 {% endblock content %}
