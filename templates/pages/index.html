@@ -1,3 +1,5 @@
+{% extends "main.html" %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +13,8 @@
         <h1 style="color: brown; font-size: 40px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 700;">hello from django</h1>
         <h2>name : {{name}}</h2>
         <h2>length : {{name | length}}</h2>
+        <h2>length : {{name | length}}</h2>
     </div>
 </body>
 </html>
+{% endblock content %}
